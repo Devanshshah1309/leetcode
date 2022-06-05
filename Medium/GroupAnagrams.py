@@ -12,7 +12,3 @@ class Solution:
             else:
                 d[c] = [s]
         return list(d.values())
-                
-
-s = Solution()
-print(s.groupAnagrams(["eat", "tea", "bag"]))
