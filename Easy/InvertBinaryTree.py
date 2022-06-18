@@ -1,7 +1,9 @@
-# Definition for a binary tree node.
+# O(n) time and O(1) space (where n = number of nodes in the binary tree)
+# (since you are "visiting" each node exactly once)
 from typing import Optional
 
 
+# Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
