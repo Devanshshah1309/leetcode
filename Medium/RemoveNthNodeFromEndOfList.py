@@ -1,4 +1,3 @@
-from socket import has_dualstack_ipv6
 from typing import Optional
 
 
