@@ -2,7 +2,7 @@ class Solution:
     def firstMissingPositive(self, nums: list[int]) -> int:
         # just perform swaps to try and ensure that nums[i - 1] = i and then return the first index that does not match
         # for any number < 0 or > len(nums), we don't care since it definitely cannot be the smallest positive missing number
-        # something like cuckoo hashing --> swap around till everything is in the (almost)
+        # something like cuckoo hashing --> swap around till everything is as correctly positioned as possible
         i = 0
         while i < len(nums):
             if 0 < nums[i] <= len(nums) and nums[i] != nums[nums[i] - 1]:
